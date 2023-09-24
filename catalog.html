@@ -25,10 +25,14 @@
         </ul>
         <ul class="user-menu">
           <li class="user-menu-item">
-           <span class="visually-hidden">Поиск</span>
+            <a href="#">
+             <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="user-menu-item">
-           <span class="visually-hidden">Избранное</span>
+            <a href="#"></a>
+             <span class="visually-hidden">Избранное</span>
+            </a>
           </li>
         </ul>
         <button type="button">ХОЧУ СЮДА!</button>
@@ -38,101 +42,154 @@
       <section class="filter">
         <header class="filter-header">
           <h1>Гостиницы Седоны</h1>
-          <a href="index.html">
-           <img src="#" alt="На главную">
-          </a>
-          <p>Гостиницы</p>
+          <!-- доделать хлебные крошки -->
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a href="index.html">
+                 <span class="visually-hidden">Главнпя странцица</span>
+                </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <p>Гостиницы</p>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <ul class="settings-filter">
-          <li>
+        <!-- исправить блоки с фомами -->
+
             <h2>Инфраструтура:</h2>
             <form action="#" method="post">
-              <label>
-               <input type="checkbox" name="pool" value="pool"> Бассейн
-              </label>
-              <label>
-               <input type="checkbox" name="parking" value="parking"> Парковка
-              </label>
-              <label>
-               <input type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
-               </label>
-            </form>
-          </li>
-          <li>
+              <fieldset>
+                <ul class="infrastructure">
+                  <label>
+                   <input type="checkbox" name="pool"> Бассейн
+                  </label>
+                  <label>
+                    <input type="checkbox" name="parking"> Парковка
+                  </label>
+                  <label>
+                   <input type="checkbox" name="wi-fi"> Wi-Fi
+                  </label>
+                </ul>
+              </fieldset>
+
             <h2>Тип Жилья</h2>
-            <form action="#" method="post">
-              <label>
-               <input type="radio" name="housing" value="hotel"> Гостиница
-              </label>
-              <label>
-               <input type="radio" name="housing" value="motel"> Мотель
-              </label>
-              <label>
-               <input type="radio" name="housing" value="apartment"> Апаотаменты
-              </label>
-           </form>
-          </li>
-          <li>
+            <fieldset>
+              <ul class="housing-type">
+                <label>
+                 <input type="radio" name="housing" value="hotel"> Гостиница
+                </label>
+                <label>
+                 <input type="radio" name="housing" value="motel"> Мотель
+                </label>
+                <label>
+                 <input type="radio" name="housing" value="apartment"> Апартаменты
+                </label>
+              </ul>
+            </fieldset>
+
             <h2>Стоимость, ₽:</h2>
-            <form action="#" method="post">
-             <input type="text" placeholder="от">
+            <fieldset>
+              <label>
+               <input type="number"> от
+              </label>
+              <label>
+               <input type="number"> до
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label>
+               <button type="submit" value="ПРИМЕНИТЬ"> ПРИМЕНИТЬ
+              </label>
+              <label>
+               <button type="reset" value="СБРОСИТЬ"> СБРОСИТЬ
+              </label>
+            </fieldset>
             </form>
-            <form action="#" method="post">
-             <input type="text" placeholder="до">
-            </form>
-           </li>
-          <li>
-            <form action="#" method="post">
-             <input type="submit" value="ПРИМЕНИТЬ">
-            </form>
-            <form action="#" method="post">
-             <input type="submit" value="СБРОСИТЬ">
-            </form>
-         </li>
-       </ul>
+
      </section>
   <section class="product">
     <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
-    <form action="#" method="post">
       <select name="price">
         <option value="low-price">Сначала дешевые</option>
         <option value="hihght-price">Сначала дорогие</option>
       </select>
+    <form method="post">
+      <ul class="view-list">
+        <li class="view-item">
+          <button type="button">
+            <span class="visually-hidden">Отобразить плитками</span>
+          </button>
+        </li>
+        <li class="view-item">
+          <button type="button">
+            <span class="visually-hidden">Отобразить поочерёдно</span>
+          </button>
+        </li>
+        <li class="view-item">
+          <button type="button">
+            <span class="visually-hidden">Отобразить списком</span>
+          </button>
+        </li>
+      </ul>
     </form>
     <ul class="hotels-list">
       <li class="hotels-list-item">
+        <a href="#">
+          <img src="#" alt="Пейзаж &#8243;Amara Resort & Spa&#8243;">
+        </a>
         <h4>Amara Resort & Spa</h4>
         <p>Гостиница</p>
         <p>От 4000 ₽</p>
-        <button type="button">ПОДРОБНЕЕ</button>
+        <form action="#">
+          <button type="button">ПОДРОБНЕЕ</button>
+          </form>
         <button type="button">В ИЗБРАННОЕ</button>
         <p>РЕЙТИНГ 8,5</p>
       </li>
       <li class="hotels-list-item">
+        <a href="#">
+          <img src="#" alt="Пейзаж &#8243;Villas at Poco Diablo&#8243;">
+        </a>
         <h4>Villas at Poco Diablo</h4>
         <p>Гостиница</p>
         <p>От 5000 ₽</p>
-        <button type="button">ПОДРОБНЕЕ</button>
+        <form action="#">
+          <button type="button">ПОДРОБНЕЕ</button>
+          </form>
         <button type="button">В ИЗБРАННОЕ</button>
         <p>РЕЙТИНГ9,2</p>
       </li>
       <li class="hotels-list-item">
+        <a href="#">
+          <img src="#" alt="Пейзаж &#8243;Desert Quail Inn&#8243;">
+        </a>
         <h4>Desert Quail Inn</h4>
         <p>Гостиница</p>
         <p>От 2,500 ₽</p>
-        <button type="button">ПОДРОБНЕЕ</button>
+        <form action="#">
+          <button type="button">ПОДРОБНЕЕ</button>
+          </form>
         <button type="button">В ИЗБРАННОЕ</button>
         <p>РЕЙТИНГ6,9</p>
       </li>
       <li class="hotels-list-item">
+        <a href="#">
+          <img src="#" alt="Пейзаж &#8243;GreenTree Inn&#8243;">
+        </a>
         <h4>GreenTree Inn</h4>
         <p>Гостиница</p>
         <p>От 1,500 ₽</p>
+        <form action="#">
         <button type="button">ПОДРОБНЕЕ</button>
+        </form>
         <button type="button">В ИЗБРАННОЕ</button>
         <p>РЕЙТИНГ5,0</p>
       </li>
       </ul>
+      <!-- доделать пагинацию -->
       <ul class="hotels-page">
        <li class="hotels-page-item"><a href="#">1</a></li>
        <li class="hotels-page-item"><a href="#">2</a></li>
@@ -149,19 +206,21 @@
   <section class="subscribe">
     <h3>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <input type="email" placeholder="Ваш e-mail">
-     <button type="button">ПОДПИСАТЬСЯ</button>
+    <form action="#" method="post">
+      <input class="subscribe-e-mail-field" type="email" placeholder="Ваш e-mail" name="subscribe-e-mail" required>
+        <button type="submit">ПОДПИСАТЬСЯ</button>
+    </form>
   </section>
     </main>
     <footer class="main-footer">
       <ul class="social">
         <li class="social-item">
-          <a href="№">
+          <a href="#">
            <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a href="№">
+          <a href="#">
            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
