@@ -42,12 +42,11 @@
       <section class="filter">
         <header class="filter-header">
           <h1>Гостиницы Седоны</h1>
-          <!-- доделать хлебные крошки -->
           <nav class="breadcrumbs">
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a href="index.html">
-                 <span class="visually-hidden">Главнпя странцица</span>
+                 <span class="visually-hidden">Главная странцица</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -57,9 +56,8 @@
           </nav>
         </header>
         <!-- исправить блоки с фомами -->
-
-            <h2>Инфраструтура:</h2>
-            <form action="#" method="post">
+        <form action="#" method="post">
+            <legend>Инфраструтура:</legend>
               <fieldset>
                 <ul class="infrastructure">
                   <label>
@@ -73,8 +71,7 @@
                   </label>
                 </ul>
               </fieldset>
-
-            <h2>Тип Жилья</h2>
+            <legend>Тип Жилья</legend>
             <fieldset>
               <ul class="housing-type">
                 <label>
@@ -88,26 +85,24 @@
                 </label>
               </ul>
             </fieldset>
-
-            <h2>Стоимость, ₽:</h2>
+            <legend>Стоимость, ₽:</legend>
             <fieldset>
               <label>
-               <input type="number"> от
+                <input type="number" value="9000">от
               </label>
               <label>
-               <input type="number"> до
-              </label>
+                <input type="number" value="9000">до
+               </label>
             </fieldset>
-
             <fieldset>
               <label>
-               <button type="submit" value="ПРИМЕНИТЬ"> ПРИМЕНИТЬ
+               <button type="submit" value="ПРИМЕНИТЬ">ПРИМЕНИТЬ</button>
               </label>
               <label>
-               <button type="reset" value="СБРОСИТЬ"> СБРОСИТЬ
+               <button type="reset" value="СБРОСИТЬ">СБРОСИТЬ</button>
               </label>
             </fieldset>
-            </form>
+        </form>
 
      </section>
   <section class="product">
@@ -116,7 +111,7 @@
         <option value="low-price">Сначала дешевые</option>
         <option value="hihght-price">Сначала дорогие</option>
       </select>
-    <form method="post">
+    <form action="#" method="post">
       <ul class="view-list">
         <li class="view-item">
           <button type="button">
@@ -125,7 +120,7 @@
         </li>
         <li class="view-item">
           <button type="button">
-            <span class="visually-hidden">Отобразить поочерёдно</span>
+            <span class="visually-hidden">На всю страницу</span>
           </button>
         </li>
         <li class="view-item">
@@ -189,18 +184,37 @@
         <p>РЕЙТИНГ5,0</p>
       </li>
       </ul>
-      <!-- доделать пагинацию -->
-      <ul class="hotels-page">
-       <li class="hotels-page-item"><a href="#">1</a></li>
-       <li class="hotels-page-item"><a href="#">2</a></li>
-       <li class="hotels-page-item"><a href="#">3</a></li>
-       <li class="hotels-page-item"><a href="#">4</a></li>
-       <li class="hotels-page-item"><a href="#">5</a></li>
-       <li class="hotels-page-item"><a href="#">6</a></li>
-       <li class="hotels-page-item"><a href="#">7</a></li>
-       <li class="hotels-page-item"><a href="#">8</a></li>
-       <li class="hotels-page-item"><a href="#">9</a></li>
-       <li class="hotels-page-item"><a href="#">10</a></li>
+      <ol class="hotels-pagination">
+       <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">1 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">2 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">3 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">4 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">5 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">6 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">7 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">8 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">9 страница</span></button>
+      </li>
+      <li class="hotels-pagination-item">
+        <button class="hotels-pagination-button" type="button"><span class="visually-hidden">10 страница</span></button>
+      </li>
       </ul>
   </section>
   <section class="subscribe">
