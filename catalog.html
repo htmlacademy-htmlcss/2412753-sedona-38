@@ -55,6 +55,7 @@
             </ul>
           </nav>
         </header>
+        <h2 class="visually-hidden">Фильтр</h2>
         <!-- исправить блоки с фомами -->
         <form action="#" method="post">
          <legend>Инфраструтура:</legend>
@@ -88,7 +89,7 @@
             <legend>Стоимость, ₽:</legend>
             <fieldset>
               <label>
-                <input type="number" value="9000">от
+                <input type="number" value="0">от
               </label>
               <label>
                 <input type="number" value="9000">до
@@ -105,25 +106,27 @@
         </form>
       </section>
       <section class="hotels-find">
-        <h2 class="hotels-find-title">НАЙДЕНО ГОСТИНИЦ: 38</h2>
-        <select name="price">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="hotels-find-quantity">НАЙДЕНО ГОСТИНИЦ: 38<p>
+        <select name="select-control">
          <option value="low-price">Сначала дешевые</option>
          <option value="hihght-price">Сначала дорогие</option>
+         <option value="popular">Сначала популярные</option>
         </select>
         <form action="#" method="post">
           <ul class="view-list">
             <li class="view-item">
-              <button type="button">
+              <button type="submit">
                <span class="visually-hidden">Отобразить плитками</span>
               </button>
             </li>
             <li class="view-item">
-              <button type="button">
+              <button type="submit">
                <span class="visually-hidden">На всю страницу</span>
               </button>
             </li>
             <li class="view-item">
-              <button type="button">
+              <button type="submit">
                <span class="visually-hidden">Отобразить списком</span>
               </button>
             </li>
@@ -134,13 +137,13 @@
             <a href="#">
              <img src="#" alt="Пейзаж &#8243;Amara Resort & Spa&#8243;">
             </a>
-            <h4>Amara Resort & Spa</h4>
+            <h3>Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
             <form action="#">
               <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">В ИЗБРАННОЕ</button>
             </form>
-            <button type="button">В ИЗБРАННОЕ</button>
             <span class="visually-hidden">4 звезды</span>
             <p>РЕЙТИНГ 8,5</p>
           </li>
@@ -148,13 +151,13 @@
             <a href="#">
              <img src="#" alt="Пейзаж &#8243;Villas at Poco Diablo&#8243;">
             </a>
-            <h4>Villas at Poco Diablo</h4>
+            <h3>Villas at Poco Diablo</h3>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
             <form action="#">
-             <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">В ИЗБРАННОМ</button>
             </form>
-            <button type="button">В ИЗБРАННОЕ</button>
             <span class="visually-hidden">4 звезды</span>
             <p>РЕЙТИНГ9,2</p>
           </li>
@@ -162,13 +165,13 @@
             <a href="#">
              <img src="#" alt="Пейзаж &#8243;Desert Quail Inn&#8243;">
             </a>
-            <h4>Desert Quail Inn</h4>
+            <h3>Desert Quail Inn</h3>
             <p>Гостиница</p>
             <p>От 2,500 ₽</p>
             <form action="#">
-            <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">В ИЗБРАННОЕ</button>
             </form>
-            <button type="button">В ИЗБРАННОЕ</button>
             <span class="visually-hidden">3 звезды</span>
              <p>РЕЙТИНГ6,9</p>
           </li>
@@ -176,52 +179,52 @@
             <a href="#">
              <img src="#" alt="Пейзаж &#8243;GreenTree Inn&#8243;">
             </a>
-            <h4>GreenTree Inn</h4>
+            <h3>GreenTree Inn</h3>
             <p>Гостиница</p>
             <p>От 1,500 ₽</p>
             <form action="#">
-             <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">ПОДРОБНЕЕ</button>
+              <button type="button">В ИЗБРАННОЕ</button>
             </form>
-            <button type="button">В ИЗБРАННОЕ</button>
             <span class="visually-hidden">2 звезды</span>
             <p>РЕЙТИНГ5,0</p>
           </li>
         </ul>
-      <ul class="pagination">
-        <li class="pagination-item">
-         <a class="pagination-link pagiantioun-current" href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">2</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">3</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">4</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">5</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">6</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">7</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">8</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">9</a>
-         </li>
-         <li class="pagination-item">
-          <a class="pagination-link pagiantioun-current" href="#">10</a>
-         </li>
-      </ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+           <a class="pagination-link pagiantioun-current" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">2</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">3</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">4</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">5</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">6</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">7</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">8</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">9</a>
+           </li>
+           <li class="pagination-item">
+            <a class="pagination-link pagiantioun-current" href="#">10</a>
+           </li>
+        </ul>
       </section>
   <section class="subscribe">
-    <h3>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+    <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form action="#" method="post">
       <input class="subscribe-e-mail-field" type="email" placeholder="Ваш e-mail" name="subscribe-e-mail" required>
