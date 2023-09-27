@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона. Гостиницы</title>
   </head>
   <body class="page">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <p class="logo">
        <a href="index.html">
        <img src="#" alt="Логотип гостиницы Седона">
@@ -38,8 +38,8 @@
         <button type="button">ХОЧУ СЮДА!</button>
        </nav>
     </header>
-    <main class="main-inner">
-      <section class="filter">
+    <main class="main-inner" data-test="main">
+      <section class="filter" data-test="filter">
         <header class="filter-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <nav class="breadcrumbs">
@@ -57,7 +57,7 @@
         </header>
         <h2 class="visually-hidden">Фильтр</h2>
         <!-- исправить блоки с фомами -->
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
          <legend>Инфраструтура:</legend>
           <fieldset>
             <ul class="infrastructure">
@@ -105,7 +105,7 @@
             </fieldset>
         </form>
       </section>
-      <section class="hotels-find">
+      <section class="hotels-find" data-test="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="hotels-find-quantity">НАЙДЕНО ГОСТИНИЦ: 38<p>
         <select name="select-control">
@@ -113,7 +113,7 @@
          <option value="hihght-price">Сначала дорогие</option>
          <option value="popular">Сначала популярные</option>
         </select>
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <ul class="view-list">
             <li class="view-item">
               <button type="submit">
@@ -141,7 +141,7 @@
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
             <a class="hotels-item-link" href="#">ПОДРОБНЕЕ</a>
-            <form action="#">
+            <form action="https://echo.htmlacademy.ru">
               <button type="button">В ИЗБРАННОЕ</button>
             </form>
             <span class="visually-hidden">4 звезды</span>
@@ -155,7 +155,7 @@
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
             <a class="hotels-item-link" href="#">ПОДРОБНЕЕ</a>
-            <form action="#">
+            <form action="https://echo.htmlacademy.ru">
               <button type="button">В ИЗБРАННОМ</button>
             </form>
             <span class="visually-hidden">4 звезды</span>
@@ -169,7 +169,7 @@
             <p>Гостиница</p>
             <p>От 2,500 ₽</p>
             <a class="hotels-item-link" href="#">ПОДРОБНЕЕ</a>
-            <form action="#">
+            <form action="https://echo.htmlacademy.ru">
               <button type="button">В ИЗБРАННОЕ</button>
             </form>
             <span class="visually-hidden">3 звезды</span>
@@ -183,7 +183,7 @@
             <p>Гостиница</p>
             <p>От 1,500 ₽</p>
             <a class="hotels-item-link" href="#">ПОДРОБНЕЕ</a>
-            <form action="#">
+            <form action="https://echo.htmlacademy.ru">
               <button type="button">В ИЗБРАННОЕ</button>
             </form>
             <span class="visually-hidden">2 звезды</span>
@@ -223,16 +223,16 @@
            </li>
         </ul>
       </section>
-  <section class="subscribe">
+  <section class="subscribe" data-test="subscribe">
     <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form action="#" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <input class="subscribe-e-mail-field" type="email" placeholder="Ваш e-mail" name="subscribe-e-mail" required>
         <button type="submit">ПОДПИСАТЬСЯ</button>
     </form>
   </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="social">
         <li class="social-item">
           <a href="#">
