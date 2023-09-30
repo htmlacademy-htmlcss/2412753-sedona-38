@@ -8,11 +8,9 @@
 
   <body class="page">
     <header class="page-header">
-      <p class="logo">
-        <a href="index.html">
-          <img src="#" alt="Логотип гостиницы Седона">
-        </a>
-      </p>
+      <a class="logo" href="index.html">
+        <img src="#" alt="Логотип гостиницы Седона">
+      </a>
       <nav class="main-nav">
         <ul class="menu">
           <li class="menu-item">
@@ -25,18 +23,14 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="user-menu">
-          <li class="user-menu-item">
-            <a href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-        </ul>
+        <div class="user-menu">
+          <a class="search user-menu-item" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <a class="favorites user-menu-item" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </div>
         <button class="button-want" type="button">Хочу Сюда!</button>
       </nav>
     </header>
@@ -45,9 +39,8 @@
         <h1 class="visually-hidden">Город Седона</h1>
         <div class="hero-mountains">
           <img class="hero-img" src="#" alt="Горный пейзаж седоны">
-        </div>
-        <img class="hero-logo" src="#"
-          alt="WELCOME to the gorgeous SEDONA &#8243;Because the Grand Canyon sucks&#8243;">
+          <img class="hero-logo" src="#"
+            alt="WELCOME to the gorgeous SEDONA &#8243;Because the Grand Canyon sucks&#8243;">
         </div>
         <div class="causes-text">
           <h2 class="causes-tittle tittle-bold">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -122,16 +115,16 @@
       <ul class="social">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">В контакте</span>
+            <span class="visually-hidden social-vk">В контакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
+          <a class="social-link social-telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
