@@ -29,3 +29,132 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: inherit
+}
+
+.favorites-basket {
+  color: #FFFFFF;
+  line-height: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+}
+
+.button-want {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: #756157;
+}
+
+.button-find {
+  line-height: 36px;
+}
+
+.hero-mountains {
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.title-bold {
+  color: #000000;
+  line-height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #333333;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+.list-title {
+  color: #000000;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.causes-description {
+  color: #333333;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.causes-item-color {
+  background-color: #82B3D3;
+}
+
+.description {
+  color: #000000;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.service-color {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.main-subscribe {
+  background-image: url(../images/subscribe-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.button-subscribe {
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  background-color: #82B3D3;
+}
+
+
+
+.subscribe-e-mail-field {
+  background-color: #F2F2F2;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
