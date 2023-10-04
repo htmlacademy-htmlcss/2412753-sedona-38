@@ -97,17 +97,17 @@
               </ul>
             </fieldset>
             <fieldset class="filter-price">
-              <legend>Стоимость, ₽:</legend>
+              <legend class="filter-legend">Стоимость, ₽:</legend>
               <label>
-                <input type="number" value="0">от
+                <input class="price" type="number" value="0">от
               </label>
               <label>
-                <input type="number" value="9000">до
+                <input class="price" type="number" value="9000">до
               </label>
             </fieldset>
             <fieldset>
-              <button class="button-reset" type="submit">Применить</button>
-              <button class="button-accept" type="reset">Сбросить</button>
+              <button class="button-accept" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </fieldset>
           </form>
         </div>
@@ -144,7 +144,7 @@
               <img src="images/hotels/hotel-1.jpg" width="300" height="212"
                 alt="Пейзаж &#8243;Amara Resort & Spa&#8243;">
             </a>
-            <h3 class="hotels-list-name"><a href="#" tabindex="-1">Amara Resort & Spa</a></h3>
+            <h3 class="hotels-list-name"><a class="hotels-name" href="#" tabindex="-1">Amara Resort & Spa</a></h3>
             <p class="hotels-list-type">Гостиница</p>
             <p class="hotels-list-price">От 4000 ₽</p>
             <a class="hotels-item-link" href="#">Подробнее</a>
@@ -158,11 +158,11 @@
               <img src="images/hotels/hotel-2.jpg" width="300" height="212"
                 alt="Пейзаж &#8243;Villas at Poco Diablo&#8243;">
             </a>
-            <h3 class="hotels-list-name"><a href="#" tabindex="-1">Villas at Poco Diablo</a></h3>
+            <h3 class="hotels-list-name"><a class="hotels-name" href="#" tabindex="-1">Villas at Poco Diablo</a></h3>
             <p class="hotels-list-type">Гостиница</p>
             <p class="hotels-list-price">От 5000 ₽</p>
             <a class="hotels-item-link" href="#">Подробнее</a>
-            <button class="button-favorites" type="button">В избранном</button>
+            <button class="button-favorites favorites-added" type="button">В избранном</button>
             <span class="visually-hidden">4 звезды</span>
             <div class="stars stars-four"></div>
             <p class="rating">Рейтинг 9,2</p>
@@ -171,7 +171,7 @@
             <a href="#" tabindex="-1">
               <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Пейзаж &#8243;Desert Quail Inn&#8243;">
             </a>
-            <h3 class="hotels-list-name"><a href="#" tabindex="-1">Desert Quail Inn</a></h3>
+            <h3 class="hotels-list-name"><a class="hotels-name" href="#" tabindex="-1">Desert Quail Inn</a></h3>
             <p class="hotels-list-type">Гостиница</p>
             <p class="hotels-list-price">От 2,500 ₽</p>
             <a class="hotels-item-link" href="#">Подробнее</a>
@@ -184,34 +184,34 @@
             <a href="#" tabindex="-1">
               <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Пейзаж &#8243;GreenTree Inn&#8243;">
             </a>
-            <h3 class="hotels-list-name"><a href="#" tabindex="-1">GreenTree Inn</a></h3>
+            <h3 class="hotels-list-name"><a class="hotels-name" href="#" tabindex="-1">GreenTree Inn</a></h3>
             <p class="hotels-list-type">Гостиница</p>
             <p class="hotels-list-price">От 1,500 ₽</p>
             <a class="hotels-item-link" href="#">Подробнее</a>
             <button class="button-favorites" type="button">В избранное</button>
             <span class="visually-hidden">2 звезды</span>
             <div class="stars stars-two"></div>
-            <p class="rating">РРейтинг 5,0</p>
+            <p class="rating">Рейтинг 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagiantioun-current" href="#">1</a>
+            <a class="pagiantion-current pagination-link pagiantion-current" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagiantioun-current" href="#">2</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagiantioun-current" href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagiantioun-current" href="#">4</a>
+            <a class="pagination-link " href="#">4</a>
           </li>
           <li class="pagination-item pagination-item-...">
-            <a class="pagination-link pagiantioun-current" href="#">...</a>
+            <a class="pagination-link pagiantion-space" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagiantioun-current" href="#">10</a>
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
