@@ -78,7 +78,7 @@ body {
 
 .hero-mountains {
   background-image: url(../images/index-background.jpg);
-  background-size: 100% contain;
+  background-size: cover, contain;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -89,6 +89,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -106,6 +107,12 @@ body {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.causes-list-title {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .causes-description {
@@ -118,6 +125,14 @@ body {
 
 .causes-item-color {
   background-color: #82B3D3;
+}
+
+.causes-filling {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.causes-filling-dark {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .description {
@@ -149,7 +164,13 @@ body {
   background-color: #82B3D3;
 }
 
+.subscribe-title {
+  color: #FFFFFF;
+}
 
+.subscribe-text {
+  color: #FFFFFF;
+}
 
 .subscribe-e-mail-field {
   background-color: #F2F2F2;
