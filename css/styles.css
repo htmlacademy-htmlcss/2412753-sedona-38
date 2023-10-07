@@ -67,6 +67,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.main-index {
+  background-color: #FFFFFF;
+}
+
 .hero-mountains {
   background-image: url(../images/index-background.jpg);
   background-size: cover, contain;
