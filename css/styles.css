@@ -590,15 +590,16 @@ body {
 }
 
 .breadcrumbs-link-main {
-  background-image: url("../images/icons/home.svg");
+  display: block;
+    background-image: url("../images/icons/breadcrumbs-home.svg");
   background-repeat: no-repeat;
-  background-position: center top;
-  width: 20px;
-  min-height: 20px;
-  margin-right: 25px;
-}
+  background-position: center;
+  width: 13px;
+  height: 21px;
+  }
 
 .breadcrumbs-main {
+  margin-right: 25px;
   width: 13px;
   height: 21px;
 }
@@ -914,7 +915,7 @@ body {
 }
 
 .stars {
-  background-image: url(../images/icons/star.svg);
+  background-image: url("../images/icons/star.svg");
   width: 18px;
   height: 17px;
   background-repeat: space;
