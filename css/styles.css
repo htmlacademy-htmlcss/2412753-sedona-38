@@ -35,7 +35,7 @@ body {
 
 .page-container {
   background-color: #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -402,7 +402,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   border: none;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .button {
@@ -417,6 +417,7 @@ body {
   border: none;
   padding: 8px 50px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button-want {
@@ -443,12 +444,13 @@ body {
   padding: 8px 50px;
   margin-left: 108px;
   margin-right: 108px;
+  cursor: pointer;
 }
 
 .button-subscribe {
   line-height: 36px;
   font-size: 20px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   min-height: 52px;
   max-width: 232px;
 }
@@ -457,12 +459,51 @@ body {
   background-color: #756157;
 }
 
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-blue {
   background-color: #82b3d3;
 }
 
+.button-blue:hover {
+  background-color: #68a2ca;
+}
+
+.button-blue:focus {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+ color: rgba(255, 255, 255, 0.3);
+ background-color: #82b3d3;
+}
+
 .button-green {
   background-color: #7db54f;
+}
+
+.button-green:hover {
+  background-color: #6C9E42;
+}
+
+.button-green:focus {
+  background-color: #6C9E42;
+}
+
+.button-green:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #7db54f;
 }
 
 .subscribe-title {
@@ -507,7 +548,7 @@ body {
   grid-template-rows: 40px;
   margin: 0;
   padding: 0;
-  }
+}
 
 .social-item {
   list-style: none;
@@ -540,7 +581,14 @@ body {
 .contact-phone {
   width: 720px;
   text-align: center;
+}
 
+.phone:hover {
+  color: #756157;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .contact-logo {
@@ -551,6 +599,10 @@ body {
 
 .logo-footer {
   vertical-align: bottom;
+}
+
+.logo-footer:hover {
+color: rgba(117, 97, 87, 1);
 }
 
 .filter-background {
@@ -587,14 +639,26 @@ body {
   line-height: 21px;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-link-main {
   display: block;
-    background-image: url("../images/icons/breadcrumbs-home.svg");
+  background-image: url("../images/icons/breadcrumbs-home.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 13px;
   height: 21px;
-  }
+}
 
 .breadcrumbs-main {
   margin-right: 25px;
@@ -681,11 +745,11 @@ body {
 }
 
 .price-left {
-  border-radius: 4px, 0px, 0px, 4px;
+  border-radius: 4px, 0, 0, 4px;
 }
 
 .price-right {
-  border-radius: 0px, 4px, 4px, 0px;
+  border-radius: 0, 4px, 4px, 0;
 }
 
 .price-interval {
@@ -732,7 +796,22 @@ body {
   border: none;
   width: 191px;
   min-height: 36px;
+  cursor: pointer;
 }
+
+.button-reset:hover {
+opacity: 60%;
+}
+
+.button-reset:focus {
+border: solid 3px #83B3D3;
+border-radius: 4px;
+}
+
+.button-reset:active {
+color: rgba(255, 255, 255, 0.3);
+}
+
 
 .hotels-find {
   padding: 50px 70px 60px 70px;
@@ -751,8 +830,8 @@ body {
   display: grid;
   gap: 8px;
   grid-template-columns: 48px 48px 48px;
-  grid-template-rows:    48px;
-align-self: flex-start;
+  grid-template-rows: 48px;
+  align-self: flex-start;
 }
 
 .button-view {
@@ -764,12 +843,25 @@ align-self: flex-start;
   border-radius: 4px;
   border-color: #e5e5e5;
   background-position: center;
+  cursor: pointer;
+}
 
+.button-view:hover {
+  border-color: #000;
+}
+
+.button-view:focus {
+  border-color: #68a2ca;
+}
+
+.button-view:active {
+  border-color: #000;
 }
 
 .view-active {
   border-color: #000;
 }
+
 
 .button-split {
   background-image: url("../images/icons/split-icon.svg");
@@ -802,7 +894,7 @@ align-self: flex-start;
   line-height: 21px;
   border-radius: 4px;
 
-  border: 2px solid var(--forms-elements-1, #E5E5E5);
+  border: 2px solid var(--forms-elements-1, #e5e5e5);
   width: 292px;
   padding: 12px 18px;
   margin-left: auto;
@@ -944,7 +1036,7 @@ align-self: flex-start;
 .pagination {
   display: grid;
   grid-template-columns: 60px 60px 60px 60px 60px 60px;
-  grid-template-rows:    60px;
+  grid-template-rows: 60px;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -986,6 +1078,11 @@ a.pagiantion-current {
   width: 60px;
   min-height: 48px;
   border-radius: 4px;
+}
+
+
+.pagination-link:active {
+color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-title-catalog {
