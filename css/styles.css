@@ -485,8 +485,8 @@ body {
 }
 
 .button-blue:active {
- color: rgba(255, 255, 255, 0.3);
- background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
 }
 
 .button-green {
@@ -502,8 +502,8 @@ body {
 }
 
 .button-green:active {
-color: rgba(255, 255, 255, 0.3);
-background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
 }
 
 .subscribe-title {
@@ -543,40 +543,51 @@ background-color: #7db54f;
 }
 
 .social {
-  display: grid;
-  grid-template-columns: 48px 48px 48px;
-  grid-template-rows: 40px;
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .social-item {
+  width: 100%;
+  height: 100%;
   list-style: none;
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
 }
 
 .social-link {
   display: block;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 24px;
   height: 40px;
-  margin: 0;
-  display: block;
+  position: relative;
 }
 
-.social-vk {
-  background-image: url("../images/icons/vk.svg");
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83b3d3;
 }
 
-.social-telegram {
-  background-image: url("../images/icons/telegram.svg");
+.social-icon:hover {
+  fill: #68a2ca;
 }
 
-.social-youtube {
-  background-image: url("../images/icons/youtube.svg");
+.social-icon:focus {
+  fill: #68a2ca;
 }
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 
 .contact-phone {
   width: 720px;
@@ -598,11 +609,23 @@ background-color: #7db54f;
 }
 
 .logo-footer {
-  vertical-align: bottom;
+  fill: #000000;
 }
 
 .logo-footer:hover {
-color: rgba(117, 97, 87, 1);
+  fill: rgba(117, 97, 87, 1);
+}
+
+.logo-footer:focus {
+  fill: #756157;
+}
+
+.logo-footer:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-link {
+  display: flex;
 }
 
 .filter-background {
@@ -614,7 +637,6 @@ color: rgba(117, 97, 87, 1);
   background-color: #747d8e;
   padding: 35px 70px 70px;
 }
-
 .inner-header-title {
   font-size: 60px;
   font-style: normal;
@@ -632,11 +654,20 @@ color: rgba(117, 97, 87, 1);
   margin-right: auto;
 }
 
+.breadcrumbs-hotels {
+  padding-left: 15px;
+  background-image: url("../images/icons/breadcrumbs-arrow.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .breadcrumbs-link:hover {
@@ -661,7 +692,7 @@ color: rgba(117, 97, 87, 1);
 }
 
 .breadcrumbs-main {
-  margin-right: 25px;
+  margin-right: 10px;
   width: 13px;
   height: 21px;
 }
@@ -686,9 +717,12 @@ color: rgba(117, 97, 87, 1);
   padding: 0;
 }
 
+.filter-checkbox {
+  cursor: pointer;
+}
+
 .filter-list-item {
   margin-top: 16px;
-
 }
 
 .filter-housing {
@@ -723,6 +757,7 @@ color: rgba(117, 97, 87, 1);
 
 .filter-label {
   line-height: 23px;
+  cursor: pointer;
 }
 
 .price-item {
@@ -779,7 +814,6 @@ color: rgba(117, 97, 87, 1);
   min-height: 36px;
   margin-top: auto;
   margin-bottom: 32px;
-
 }
 
 .button-reset {
@@ -800,16 +834,16 @@ color: rgba(117, 97, 87, 1);
 }
 
 .button-reset:hover {
-opacity: 60%;
+  opacity: 60%;
 }
 
 .button-reset:focus {
-border: solid 3px #83B3D3;
-border-radius: 4px;
+  border: solid 3px #83B3D3;
+  border-radius: 4px;
 }
 
 .button-reset:active {
-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1081,8 +1115,12 @@ a.pagiantion-current {
 }
 
 
-.pagination-link:active {
-color: rgba(255, 255, 255, 0.3);
+.pagination-link:not(.pagiantion-current):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link:not(.pagiantion-current):hover {
+  background-color: #68a2ca;
 }
 
 .subscribe-title-catalog {
