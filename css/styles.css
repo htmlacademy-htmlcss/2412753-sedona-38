@@ -165,7 +165,7 @@ body {
 
 .hero-mountains {
   background-image: url("../images/index-background-mask.svg"), url("../images/index-background.jpg");
-  background-size: 100% 57px, cover;
+  background-size: 100% 57px cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 485px;
@@ -780,11 +780,11 @@ body {
 }
 
 .price-left {
-  border-radius: 4px, 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .price-right {
-  border-radius: 0, 4px, 4px, 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .price-interval {
