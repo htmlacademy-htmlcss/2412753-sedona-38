@@ -72,7 +72,6 @@ body {
 
 .menu-item {
   display: block;
-  vertical-align: middle;
   list-style: none;
   padding-left: 16px;
   padding-right: 16px;
@@ -88,6 +87,10 @@ body {
   display: flex;
   align-items: center;
   min-height: 62px;
+}
+
+.navigation-link:hover {
+opacity: 0.7;
 }
 
 .nav-link-current {
@@ -160,12 +163,12 @@ body {
 
 .hero {
   max-width: 1200px;
-  padding-bottom: 51px;
+  margin-bottom: 21px;
 }
 
 .hero-mountains {
   background-image: url("../images/index-background-mask.svg"), url("../images/index-background.jpg");
-  background-size: 100% 57px cover;
+  background-size: 100% 57px, cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 485px;
@@ -177,13 +180,6 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero-mask {
-  background-image: url("../images/index-background-mask.svg");
-  background-size: 100% 57px cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .hero-text {
@@ -248,7 +244,21 @@ body {
   max-width: 175px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  margin-bottom: 62px;
+ }
+
+.title-line:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  left: 58px;
+  top: 86px;
 }
+
 
 .advantages-description {
   color: #333333;
@@ -273,14 +283,6 @@ body {
   display: flex;
 }
 
-.title-line:after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  width: 60px;
-  margin: 30px auto;
-}
 
 .title-line-color:after {
   background: rgba(255, 255, 255, 0.3);
@@ -321,28 +323,19 @@ body {
 }
 
 .service-list-item {
+  box-sizing: border-box;
   list-style: none;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  padding: 80px 85px 80px 85px;
   display: block;
-}
-
-.service-container {
-  width: 230px;
-  min-height: 223px;
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-top: 80px;
-  margin-bottom: 80px;
   background-repeat: no-repeat;
-  background-position: center top;
-  display: block;
+  background-position: center top 80px;
 }
 
-.service-container h3 {
-  padding-top: 102px;
+.list-title {
+  margin-top: 105px;
   margin-bottom: 30px;
-
 }
 
 .service-color {
@@ -355,8 +348,7 @@ body {
 
 .service-housing {
   background-image: url("../images/icons/home.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
+
 }
 
 .service-food {
@@ -554,13 +546,13 @@ body {
   width: 100%;
   height: 100%;
   list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
   position: relative;
 }
 
 .social-link {
   display: block;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 24px;
   height: 40px;
   position: relative;
@@ -799,7 +791,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-}
+  padding-top: 56px;
+  position: relative;
+ }
 
 .button-accept {
   color: #ffffff;
@@ -812,7 +806,6 @@ body {
   background-color: #82b3d3;
   width: 191px;
   min-height: 36px;
-  margin-top: auto;
   margin-bottom: 32px;
 }
 
@@ -831,6 +824,8 @@ body {
   width: 191px;
   min-height: 36px;
   cursor: pointer;
+  position: absolute;
+  bottom: 0;
 }
 
 .button-reset:hover {
