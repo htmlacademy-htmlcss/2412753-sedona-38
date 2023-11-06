@@ -68,6 +68,7 @@
                 <ul class="infrastructure-list">
                   <li class="filter-list-item">
                     <input class="filter-checkbox" type="checkbox" name="pool" id="pool" checked>
+                    <span class="control-mark"></span>
                     <label class="filter-label" for="pool">Бассейн</label>
                   </li>
                   <li class="filter-list-item">
@@ -99,6 +100,9 @@
               </fieldset>
               <fieldset class="filter-price filter-block filter-item">
                 <legend class="filter-legend price-title">Стоимость, ₽:</legend>
+
+
+                <div class="range">
                 <div class="price-item">
                   <label>
                     <input class="price price-left" type="number" value="0"><span class="price-interval">от</span>
@@ -107,6 +111,19 @@
                     <input class="price price-right" type="number" value="9000"><span class="price-interval">до</span>
                   </label>
                 </div>
+
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
               </fieldset>
               <fieldset class="filter-block filter-item filter-buttons">
                 <button class="button-accept button button-blue" type="submit">Применить</button>
@@ -313,6 +330,58 @@
         </div>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+            <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+                <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="field-group enter">
+                        <label class="date" for="date-enter">Дата Заезда:</label>
+                        <input class="search-form-field modal-field" type="text" id="date-enter" name="date-enter"
+                            value="27 апреля 2020" placeholder="Укажите дату">
+                    </p>
+                    <p class="date-enter-error date-enter">Мы не можем отправить Вас в прошлое</p>
+                    <p class="field-group exit">
+                        <label class="date" for="date-exit">Дата Выезда:</label>
+                        <input class="search-form-field modal-field" type="text" id="date-exit" name="date-exit"
+                            value="1 сентября 2021" placeholder="Укажите дату">
+                    </p>
+                    <p class="date-enter-avialable date-enter">На эти даты номера пока есть. Пока есть</p>
+                    <p class="tenants">
+                        Взрослые:
+                    </p>
+                    <p class="adults-field-button">
+                        <button class="button-minus button-minus-adult" type="button"></button>
+                        <input class="tenants-adults tenants-field modal-field" type="number" value="2" max="99">
+                        <button class="button-plus button-plus-adult" type="button"></button>
+                    </p>
+                    <p class=" kids-info">
+                        <span class="kids-text">Дети:</span>
+                        <span class="form-info">
+                        <button class="modal-information" type="button">
+                        </button>
+                        <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+
+                    </p>
+                    <p class="kids-field-button">
+                        <button class="button-minus button-minus-kids" type="button"></button>
+                        <input class="tenants-kids tenants-field modal-field" type="number" value="2" max="99">
+                        <button class="button-plus button-plus-kids" type="button"></button>
+                    </p>
+                    <p>
+                    <p class="modal-find">
+                        <button class="modal-find-button" type="submit">Найти</button>
+                    </p>
+                </form>
+            </section>
+        </div>
+    </div>
+
     </div>
   </body>
 
