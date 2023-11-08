@@ -50,7 +50,7 @@ body {
   margin-right: 30px;
   display: block;
   margin-bottom: -6px;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -64,17 +64,23 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   height: 64px;
   margin: 0 auto;
+  max-width: 1200px;
+  min-height: 64px;
 }
 
 .menu {
   margin: 0;
   padding: 0;
   min-width: 339px;
+  min-height: 64px;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
+  margin-left: 169px;
+  box-sizing: border-box;
 }
 
 .menu-item {
@@ -83,6 +89,7 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
+  margin: 0;
 }
 
 .navigation-link {
@@ -94,7 +101,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  min-height: 62px;
+  min-height: 64px;
 }
 
 .navigation-link:hover {
@@ -108,11 +115,12 @@ body {
 .nav-link-current::before {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: 3px;
   left: 16px;
   right: 16px;
   height: 2px;
   background-color: #756257;
+  bottom: -1px;
 }
 
 .user-menu {
